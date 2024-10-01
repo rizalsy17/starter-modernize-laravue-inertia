@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Atur gaya global */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Sidebar custom styles */
+.sidebar-link {
+  @apply text-white font-bold; /* Mengatur teks menjadi putih dan bold */
+  font-size: 1.1rem; /* Memperbesar ukuran teks */
+  padding: 0.75rem 1.25rem; /* Padding */
+}
+
+.sidebar-link i {
+  font-size: 1.25rem; /* Memperbesar ukuran ikon */
+  @apply text-yellow-400; /* Mengatur warna ikon menjadi kuning terang */
+}
+
+.nav-small-cap {
+  @apply text-white; /* Mengatur teks kategori sidebar menjadi putih */
+  font-size: 1rem;
+}
+
+.sidebar-item {
+  margin-bottom: 1rem;
+}
+
+.sidebar-nav .hide-menu {
+  font-size: 0.9rem;
+  @apply text-white font-bold; /* Memperbesar dan mengatur teks menjadi putih dan bold */
+}
+
+.unlimited-access {
+  padding: 1.5rem;
+}
+
+.unlimited-access h6 {
+  font-size: 1.2rem;
+  @apply text-white; /* Mengatur judul Upgrade to Pro menjadi putih */
+}
+
+.logo-img img {
+  width: 200px; /* Memperbesar logo */
+}
+
+/* Tambahkan warna latar belakang biru pada sidebar */
+.left-sidebar {
+  @apply bg-blue-800; /* Latar belakang sidebar menjadi biru */
+}
+
+@media (max-width: 768px) {
+  .sidebar-link {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .sidebar-link i {
+    font-size: 1.5rem;
+  }
+  
+  .unlimited-access {
+    padding: 2rem;
+  }
+}
